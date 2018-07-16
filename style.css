@@ -1,0 +1,342 @@
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+
+/* Remove excess padding and border in Firefox 4+ */
+&::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+/* END RESET */
+
+body{
+	font-family: "Quicksand";
+	color: Red;
+	background-color: white;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.leagueContainer{
+
+}
+
+.container{
+	background-color: white;
+	width: 100%;
+	padding: 23px 23px 80px 23px;
+	box-sizing: border-box;
+	opacity: 1;
+	display: none;
+	transition: opacity 1s;
+}
+
+.hiddenBehind{
+	opacity: 0.1;
+	-webkit-overflow-scrolling: none;
+}
+
+h1{
+	color: #F87153;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1em;
+	line-height: 1.1em;
+	margin-bottom: 10px;
+}
+
+h2{
+	color: black;
+	font-size: 0.8em;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.card{
+	padding: 20px 22px 12px 22px;
+	margin-top: 20px;
+	border: 1px solid #F87153;
+	box-sizing: border-box;
+	box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.08);
+	border-radius: 3px;
+}
+
+.leagueCard{
+	padding: 20px 22px 12px 22px;
+	margin-top: 20px;
+	border: 1px solid #F87153;
+	box-sizing: border-box;
+	box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.08);
+	border-radius: 3px;
+}
+
+.leagueCard:last-of-type{
+}
+
+.leagueTitle{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.leagueTitle h1{
+	flex-grow: 1;
+
+}
+.seasonTitle{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.seasonTitle h1{
+	flex-grow: 1;
+
+}
+.rightIcon{
+	margin-left: 10px;
+}
+
+.leagueInfo{
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.leagueInfo .number{
+	color: #F87153;
+	width: 20px;
+}
+
+.leagueInfo .medal{
+	width: 13px;
+	height: 13px;
+	border-radius: 10px;
+	margin-right: 10px;
+
+}
+
+.gold{
+	background-color: #FFE03D;
+}
+
+.silver{
+	background-color: #D9DEE9;
+}
+
+.bronze{
+	background-color: #E8C27A;
+}
+
+.buttonContainer{
+	display: flex;
+	justify-content: center;
+	background-color: red;
+	visibility: visible;
+}
+
+.BackButtonContainer{
+	display: flex;
+	justify-content: center;
+	background-color: red;
+	visibility: visible;
+}
+
+.button{
+	position: fixed;
+	bottom: 23px;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	padding: 10px 18px 11px 18px;
+	text-align: center;
+	width: 100px;
+
+	white-space: nowrap;
+
+	background-color: #F87153;
+	box-sizing: border-box;
+	box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.24);
+	border-radius: 24px;
+
+	transition: bottom 0.5s ease-in-out, width 0.5s ease-out, color 0.3s;
+}
+
+.button p{
+	font-size: 0.8em;
+	font-weight: 400;
+}
+
+.backButton{
+	position: fixed;
+	bottom: 23px;
+	left:23px;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	padding: 2px 1px 0px 0px;
+	text-align: center;
+	width: 37px;
+	height:37px;
+	white-space: nowrap;
+
+	background-color: white;
+	border: solid 1px #F87153;
+	box-sizing: border-box;
+	box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.24);
+	border-radius: 24px;
+
+	transition: bottom 0.5s ease-in-out, width 0.5s ease-out, color 0.3s;
+}
+
+.overlayMode{
+	bottom: 40px;
+	width: 100px;
+}
+
+
+.overlay{
+	position: fixed;
+	top: 100vh;
+	bottom: -100vh;
+	left: 20px;
+	right: 20px;
+	padding: 20px 20px 80px 20px;
+	background-color: #F7F7F7;
+	border: 1px solid #F2F2F2;
+	box-sizing: border-box;
+	box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.08);
+	border-radius: 3px;
+	overflow: scroll;
+	transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out;
+	overscroll-behavior-y: none;
+	-webkit-overflow-scrolling: touch;
+}
+
+.visible{
+	top: 20px;
+	bottom: 20px;
+	visibility: visible;
+}
+
+.containerVisible{
+	display: inline-block;
+}
+
+input{
+	font-family: "Quicksand";
+	height: 53px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 1em;
+	font-weight: 500;
+	background: #FFFFFF;
+	border: 1px solid #E5E5E5;
+	box-sizing: border-box;
+	border-radius: 3px;
+	margin-top: 10px;
+	margin-left: 0px;
+
+}
+
+input:focus{
+	border: 1px solid #F87153;
+	outline: none;
+}
+
+::placeholder {
+   color:    #DFDFDF;
+}
+
+.overlay input{
+	width: 100%;
+}
+
+
+
+.leaguePlayer{
+	display: flex;
+	flex-wrap: nowrap;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.leaguePlayer:first-of-type{
+	margin-top: 40px;
+}
+
+.leaguePlayer h3{
+	flex-grow: 1;
+}
+
+h3{
+	color: #F87153;
+	font-size: 1em;
+	font-weight: 500;
+}
